@@ -126,7 +126,7 @@
             </li>
           </ul>
           <span class="nav-item">
-            <a class="btn-outline-sm" href="log-in.html">LOG IN</a>
+            <a class="btn-outline-sm" href="sign-up.html">Free Consulation</a>
           </span>
         </div>
       </div>
@@ -144,6 +144,7 @@
               <div class="image-container">
                 <div class="img-wrapper">
                   <h5 class="text-center white">Sonity FireFunell</h5>
+                  <h5 class="text-center white">$$$$$</h5>
                   <img
                     class="img-fluid"
                     src="images/stool.png"
@@ -156,15 +157,30 @@
             </div>
             <!-- end of col -->
             <div class="col-lg-6 col-xl-7">
-              <div class="text-container">
-                <h1>Sonity</h1>
-                <p class="p-large">
-                  Use Sonity to automate your LinkedIn marketing actions in
-                  order to reach a much larger audience.
+              <div class="text-container" style="height: 400px;">
+                <p id="text-slide-1" style="display: none;" class="p-large">
+                  System<br />
+                  &emsp;&emsp;People<br />
+                  &emsp;&emsp;&emsp;&emsp;Coaching
                 </p>
-                <a class="btn-solid-lg page-scroll" href="sign-up.html"
-                  >SIGN UP</a
+                <p id="text-slide-2" style="display: none;" class="p-large">
+                  Smart Targeting<br />
+                  &emsp;&emsp;Messaging & Positioning<br />
+                  &emsp;&emsp;&emsp;&emsp;System Campaigns
+                </p>
+                <p
+                  id="text-slide-3"
+                  style="display: none;"
+                  class="p-large text-center"
                 >
+                  Start NOW To DOUBLE Or Even TRIPLE <br />
+                  Your Revenues <br />
+                  With The Sonity FireFunnel <br />
+                  <br />
+                  <a class="btn-solid-lg page-scroll" href="sign-up.html"
+                    >Let Us Show You How</a
+                  >
+                </p>
               </div>
               <!-- end of image-container -->
             </div>
@@ -1184,5 +1200,24 @@
     <!-- Validator.js - Bootstrap plugin that validates forms -->
     <script src="js/scripts.js"></script>
     <!-- Custom scripts -->
+    <script>
+      $(document).ready(function () {
+        var fadeInterval = 1500;
+        var delay = 3000;
+        $("#text-slide-1")
+          .fadeIn(fadeInterval)
+          .delay(delay)
+          .fadeOut(fadeInterval);
+        setTimeout(function () {
+          $("#text-slide-2")
+            .fadeIn(fadeInterval)
+            .delay(delay)
+            .fadeOut(fadeInterval);
+        }, fadeInterval * 2 + delay);
+        setTimeout(function () {
+          $("#text-slide-3").fadeIn(5000);
+        }, 2 * (fadeInterval * 2 + delay));
+      });
+    </script>
   </body>
 </html>
