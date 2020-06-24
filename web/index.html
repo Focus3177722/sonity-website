@@ -143,8 +143,7 @@
             <div class="col-lg-6 col-xl-5">
               <div class="image-container">
                 <div class="img-wrapper">
-                  <h5 class="text-center white">Sonity FireFunell</h5>
-                  <h5 class="text-center white">$$$$$</h5>
+                  <h5 class="white">Sonity FireFunell $$$$$</h5>
                   <img
                     class="img-fluid"
                     src="images/stool.png"
@@ -157,7 +156,7 @@
             </div>
             <!-- end of col -->
             <div class="col-lg-6 col-xl-7">
-              <div class="text-container" style="height: 400px;">
+              <div class="text-container">
                 <p id="text-slide-1" style="display: none;" class="p-large">
                   System<br />
                   &emsp;&emsp;People<br />
@@ -175,10 +174,10 @@
                 >
                   Start NOW To DOUBLE Or Even TRIPLE <br />
                   Your Revenues <br />
-                  With The Sonity FireFunnel <br />
+                  With The 3-Legged <br>
+                  Sonity FireFunnel                                                                                                                                                      Sonity FireFunnel <br />
                   <br />
-                  <a class="btn-solid-lg page-scroll" href="sign-up.html"
-                    >Let Us Show You How</a
+                  <a class="btn-solid-lg page-scroll let-us-know" href="sign-up.html">Let Us Show You How</a
                   >
                 </p>
               </div>
@@ -220,9 +219,8 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-12">
-            <div class="above-heading">DESCRIPTION</div>
             <h2 class="h2-heading">
-              Marketing Automation Will Bring More Qualified Leads
+              Hunt & Close With The SUCCESS Of The African Wild Dog
             </h2>
           </div>
           <!-- end of col -->
@@ -235,15 +233,17 @@
               <div class="card-image">
                 <img
                   class="img-fluid"
-                  src="images/description-1.png"
+                  src="images/dog-system.jpg"
                   alt="alternative"
                 />
               </div>
               <div class="card-body">
-                <h4 class="card-title">Lists Builder</h4>
+                <h4 class="card-title">Leg-1 Of 3: System</h4>
                 <p>
-                  It's very easy to start creating email lists for your
-                  marketing actions. Just create your Sonity account
+                  The Sonity FireFunel System takes the most cutting-edge 
+machine-learning technology applies it to the LinkedIn social 
+platform allowing us to identify an almost unlimited number 
+of high-quality leads 
                 </p>
               </div>
             </div>
@@ -254,15 +254,14 @@
               <div class="card-image">
                 <img
                   class="img-fluid"
-                  src="images/description-2.png"
+                  src="images/dog-people.jpg"
                   alt="alternative"
                 />
               </div>
               <div class="card-body">
-                <h4 class="card-title">Campaign Tracker</h4>
+                <h4 class="card-title">Leg-2 of 3: People</h4>
                 <p>
-                  Campaigns is a feature we've developed since the beginning
-                  because it's at the core of Sonity's functionalities
+                  The Sonity FireFunnel Back-Office Team continuously monitors to the activeengagement of prospects with your LinkedIn Profile progressingconversations on your behalf, leveraging our proven conversation methods,towards booking appointments directly into your calendar for you to CLOSE! 
                 </p>
               </div>
             </div>
@@ -273,15 +272,15 @@
               <div class="card-image">
                 <img
                   class="img-fluid"
-                  src="images/description-3.png"
+                  src="images/dog-coaching.jpg"
                   alt="alternative"
                 />
               </div>
               <div class="card-body">
-                <h4 class="card-title">Analytics Tool</h4>
+                <h4 class="card-title">Leg-3 of 3: Coaching</h4>
                 <p>
-                  Sonity collects customer data in order to help you analyse
-                  different situations and take required action
+                  Unlike so ALL other Automated Marketing Systems, the Sonity FireFunnel Systemstays with your right through to and including debriefing your CLOSING SUCCESS with 
+your personal Sonity FireFunnel Sales Coach.
                 </p>
               </div>
             </div>
@@ -1202,21 +1201,28 @@
     <!-- Custom scripts -->
     <script>
       $(document).ready(function () {
-        var fadeInterval = 1500;
-        var delay = 3000;
-        $("#text-slide-1")
-          .fadeIn(fadeInterval)
-          .delay(delay)
-          .fadeOut(fadeInterval);
-        setTimeout(function () {
-          $("#text-slide-2")
-            .fadeIn(fadeInterval)
-            .delay(delay)
-            .fadeOut(fadeInterval);
-        }, fadeInterval * 2 + delay);
-        setTimeout(function () {
-          $("#text-slide-3").fadeIn(5000);
-        }, 2 * (fadeInterval * 2 + delay));
+          function loop() {
+            var fadeInterval = 1500;
+            var delay = 3000;
+            $("#text-slide-1")
+              .fadeIn(fadeInterval)
+              .delay(delay)
+              .fadeOut(fadeInterval);
+            setTimeout(
+              function () {
+              $("#text-slide-2")
+                .fadeIn(fadeInterval)
+                .delay(delay)
+                .fadeOut(fadeInterval);
+            }, fadeInterval * 2 + delay);
+            setTimeout(function () {
+              $("#text-slide-3")
+                .fadeIn(5000)
+                .delay(10000)
+                .fadeOut(fadeInterval,function(){ loop(); });
+            }, 2 * (fadeInterval * 2 + delay));
+          }
+          loop();
       });
     </script>
   </body>

@@ -683,7 +683,7 @@ input[type="checkbox"] {
 }
 
 .navbar-custom .navbar-brand.logo-image img {
-  width: 70%;
+  width: 100%;
 }
 
 .navbar-custom .navbar-brand.logo-text {
@@ -865,6 +865,34 @@ input[type="checkbox"] {
   margin-top: -1px; /* To remove white margin in FF */
   width: 100%;
   height: 2.25rem;
+}
+
+.header .img-wrapper h5 {
+  margin-left: 0;
+  margin-top: 20px;
+  font-size: 22px;
+}
+
+.header #text-slide-1, 
+.header #text-slide-2, 
+.header #text-slide-3 {
+  font-size:20px;
+  font-weight:bold;
+}
+
+.header #text-slide-3 {
+  margin-right:0;
+}
+
+.header .text-container {
+  margin-left: 0;
+  margin-top:50px;
+  height:180px;
+}
+
+.header .text-container .let-us-know {
+  font-size:20px;
+  font-weight: bolder;
 }
 
 /*************************/
@@ -1666,6 +1694,20 @@ a:hover.back-to-top {
 
   .header-frame {
     height: 5.5rem;
+  }
+
+  .header #text-slide-3 {
+    margin-right: 100px;
+  }
+
+  .header .text-container {
+    margin-left:-70px;
+    height:400px;
+  }
+
+  .header .img-wrapper h5 {
+    margin-left: 90px;
+    margin-top:0;
   }
   /* end of header */
 
